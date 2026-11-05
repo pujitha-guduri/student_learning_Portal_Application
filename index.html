@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Learning Portal for students">
+    <title>Student Learning Portal</title>
+</head>
+<body>
+ <header>
+    <h1>Welcome to Student Learning Portal</h1>
+    <p>Learn New Skills amd Build Your Future</p>
+    <p>Your Learning Journey Starts Here!</p>
+ </header>
+ <nav>
+    <h2>Navigation Menu</h2>
+    <ul>
+        <li> <a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#registration">Registration</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+ </nav> 
+ <main>
+
+    <section id="home">
+
+        <h2>Home</h2>
+
+        <p>
+            Welcome to our Student Learning Portal.
+        </p>
+
+        <p>
+            We provide quality education and useful
+            learning resources for students.
+        </p>
+
+        <h3>Our Goals</h3>
+
+        <ul>
+            <li>Improve Technical Skills</li>
+            <li>Learn Programming</li>
+            <li>Develop Communication Skills</li>
+            <li>Build Your Career</li>
+        </ul>
+
+    </section>
+    <section id="about">
+
+    <h2>About Us</h2>
+
+    <article>
+        <h3>About Our Portal</h3>
+
+        <p>
+            Student Learning Portal is designed
+            to help students improve their knowledge
+            and technical skills.
+        </p>
+    </article>
+
+    <aside>
+        <h3>Why Choose Us?</h3>
+
+        <ul>
+            <li>Easy Learning</li>
+            <li>Quality Education</li>
+            <li>Practical Knowledge</li>
+        </ul>
+    </aside>
+
+</section>
+<section id="courses">
+
+    <h2>Our Courses</h2>
+
+    <p>Explore our available courses:</p>
+
+    <dl>
+
+        <dt>Python Full Stack</dt>
+        <dd>Learn Python, HTML, CSS and Database basics.</dd>
+
+        <dt>Java Full Stack</dt>
+        <dd>Learn Java programming and web development.</dd>
+
+        <dt>Data Science</dt>
+        <dd>Learn data analysis and Python fundamentals.</dd>
+
+        <dt>SQL</dt>
+        <dd>Learn database concepts and SQL queries.</dd>
+
+    </dl>
+
+</section>
+<section id="student-details">
+
+    <h2>Student Course Details</h2>
+
+    <table border="1">
+
+        <caption>Available Course Information</caption>
+
+        <tr>
+            <th>S.No</th>
+            <th>Course Name</th>
+            <th>Duration</th>
+            <th>Level</th>
+            <th>Fees</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Python Full Stack</td>
+            <td>6 Months</td>
+            <td>Beginner</td>
+            <td>15000</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Java Full Stack</td>
+            <td>6 Months</td>
+            <td>Intermediate</td>
+            <td>18000</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Data Science</td>
+            <td>8 Months</td>
+            <td>Advanced</td>
+            <td>20000</td>
+        </tr>
+
+    </table>
+
+</section>
+<section>
+
+    <h2>Student Attendance</h2>
+
+    <table border="1">
+
+        <caption>Attendance Report</caption>
+
+        <tr>
+            <th colspan="3">Student Attendance Details</th>
+        </tr>
+
+        <tr>
+            <th>Name</th>
+            <th>Day 1</th>
+            <th>Day 2</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Pujitha</td>
+            <td>Present</td>
+            <td>Present</td>
+        </tr>
+
+        <tr>
+            <td>Present</td>
+            <td>Absent</td>
+        </tr>
+
+    </table>
+
+</section>
+<section id="registration">
+
+    <h2>Student Registration Form</h2>
+
+    <form action="#" method="get">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name"
+placeholder="Enter your name"
+required minlength="3" maxlength="20"
+pattern="[A-Za-z ]+"
+title="Enter at least 3 letters">
+        <br><br>
+
+        <label for="email">Email:</label>
+<input type="email" id="email" name="email"
+placeholder="Enter your email"
+required
+title="Enter a valid email address">
+        <br><br>
+
+        <label for="phone">Phone:</label>
+<input type="tel" id="phone" name="phone"
+placeholder="Enter 10 digit phone number"
+required pattern="[0-9]{10}"
+title="Enter exactly 10 digits">
+        <br><br>
+
+        <label>Gender:</label>
+
+        <input type="radio" name="gender" value="Male">
+        Male
+
+        <input type="radio" name="gender" value="Female">
+        Female
+
+        <br><br>
+
+        <label>Skills:</label>
+
+        <input type="checkbox" name="skills" value="HTML">
+        HTML
+
+        <input type="checkbox" name="skills" value="Python">
+        Python
+
+        <input type="checkbox" name="skills" value="SQL">
+        SQL
+
+        <br><br>
+
+        <label for="course">Select Course:</label>
+
+        <select id="course" name="course">
+            <option>Python Full Stack</option>
+            <option>Java Full Stack</option>
+            <option>Data Science</option>
+            <option>SQL</option>
+        </select>
+<label for="suggested-course">Choose Course Suggestions:</label>
+<input list="courses-list" id="suggested-course" name="suggested-course">
+
+<datalist id="courses-list">
+    <option value="Python Full Stack">
+    <option value="Java Full Stack">
+    <option value="Data Science">
+    <option value="Web Development">
+</datalist>
+        <br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"
+        rows="4" cols="30"></textarea>
+
+        <br><br>
+
+        <button type="submit">Register</button>
+
+        <button type="reset">Clear</button>
+
+    </form>
+
+</section>
+<section id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>Email: studentportal@gmail.com</p>
+
+    <p>Phone: 9876543210</p>
+
+    <p>Address: Hyderabad, India</p>
+
+</section>
+<section id="profile">
+
+    <h2>Student Profile</h2>
+
+    <h3>My Details</h3>
+    <img src="pujitha.jpg" alt="Student Profile Photo" width="250" height="250">
+
+    <p><b>Name:</b> Pujitha</p>
+
+    <p><strong>Course:</strong> Python Full Stack</p>
+
+    <p><i>Learning New Technologies</i></p>
+
+    <p><mark>My Goal is to Become a Software Developer</mark></p>
+
+    <p><small>Welcome to my student profile</small></p>
+
+    <hr>
+
+</section>
+<section id="learning-resources">
+    <h2>English Learning Resources</h2>
+    <h3>English Speaking Practice for Beginners</h3>
+    <iframe
+    width="560"
+    height="315"
+  src="https://www.youtube.com/embed/qsmYrqwyOoY?si=EB5sD8Y9-xtGDsvD&amp;start=48" "
+    title="English Speaking Practice"
+    allowfullscreen>
+</iframe>
+    <p>Improve your English speaking and listening skills.</p>
+</section>
+<section id="audio-learning">
+    <h2>English Listening Practice</h2>
+
+    <p>Listen and improve your English communication skills.</p>
+
+    <audio controls>
+        <source src="english-learning.ogg" type="audio/ogg">
+        Your browser does not support audio.
+    </audio>
+</section>
+<section id="video-learning">
+    <h2>Video Learning</h2>
+    <h3>Educational Video</h3>
+
+    <video width="500" controls>
+        <source src="learning-video.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+</section>
+<section id="study-steps">
+    <h2>How to Use Student Learning Portal</h2>
+
+    <ol>
+        <li>Open the Student Learning Portal</li>
+        <li>Select your course</li>
+        <li>Watch learning videos</li>
+        <li>Listen to audio lessons</li>
+        <li>Complete the registration form</li>
+    </ol>
+</section>
+<section id="text-formatting">
+    <h2>HTML Text Formatting Tags</h2>
+
+    <p><em>Learning is important.</em></p>
+    <p><del>Old Course</del></p>
+    <p><ins>New Course</ins></p>
+    <p>Water Formula: H<sub>2</sub>O</p>
+    <p>Square: 5<sup>2</sup> = 25</p>
+</section>
+<section id="preformatted">
+    <h2>Preformatted Text</h2>
+
+    <pre>
+Welcome to Student Learning Portal
+Learn HTML Step by Step
+Practice Every Day
+    </pre>
+</section>
+<label for="suggested-course">Choose Course Suggestions:</label>
+<input list="courses-list" id="suggested-course" name="suggested-course">
+
+<datalist id="courses-list">
+    <option value="Python Full Stack">
+    <option value="Java Full Stack">
+    <option value="Data Science">
+    <option value="Web Development">
+</datalist>
+<section id="faqs">
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+        <summary>What is HTML?</summary>
+        <p>HTML stands for HyperText Markup Language.</p>
+    </details>
+
+    <details>
+        <summary>What is Python?</summary>
+        <p>Python is a programming language.</p>
+    </details>
+</section>
+</main>
+<footer>
+
+    <hr>
+
+    <h2>Student Learning Portal</h2>
+
+    <p>Learn Today, Lead Tomorrow!</p>
+
+    <p>Copyright &copy; 2026 Student Learning Portal</p>
+
+    <p>All Rights Reserved.</p>
+
+    <a href="#home">Back to Top</a>
+
+</footer>   
+</body>
+</html>
